@@ -64,4 +64,5 @@ runs:
         fi
 
         echo "Starting to ${OPERATION} stack ${STACK_NAME} with additional flags: ${HAPPY_DEPLOYMENT_FLAGS}"
+        ls -a
         happy ${OPERATION} --aws-profile "" --env=${ENV} ${HAPPY_DEPLOYMENT_FLAGS} ${STACK_NAME}
